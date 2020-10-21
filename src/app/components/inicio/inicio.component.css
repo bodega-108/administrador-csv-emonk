@@ -1,0 +1,163 @@
+.section{
+    margin-top: 160px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.howdoit{
+    width:50%;
+}
+
+.lectorExcel{
+    height: 300px;
+    width: 100%;
+    background: url('../../../assets/img/listo.jpg');
+    margin-top:50px;
+    border-radius: 5px;
+}
+.administrador-sku{
+    height: 300px;
+    width: 100%;
+    background: url('../../../assets/img/sku2.jpg');
+    margin-top:50px;
+    border-radius: 5px;
+}
+.administrador-sku{
+    display: flex;
+    color: antiquewhite;
+    align-items:center;
+    justify-content: center;
+}
+.howdoit-img{
+    width:50%;
+    background: url('./../../../assets/img/instruccion.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.lectorExcel{
+    display: flex;
+    color: antiquewhite;
+    align-items:center;
+    justify-content: center;
+}
+.cajalogin{
+   
+    height: 400px;
+    
+    display: flex;
+
+    
+    background-repeat: no-repeat;
+}
+.cajalogin-image {
+    background: url('../../../assets/img/E-MONKcopy.webp');
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100px;
+    border: 1px solid #eee;
+    
+}
+.form-emonk{
+    background:#eee;
+    width:500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+}
+.caja-inputs{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.input-emonk{
+    width: 400px;
+    margin: 0 auto;
+    padding:5px;
+    margin-top:15px;
+
+}
+.btn-emonk{
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 15px;
+
+}
+
+/* Spiner */
+body {
+    background-color: #333
+  }
+  .container-spinner {
+    width: 200px;
+    border-color: rgb(246, 173, 35) rgba(226, 218, 218, 0.1) rgb(246, 175, 42);
+    position: relative;
+    margin: 20% auto;
+  }
+  .container-spinner div {
+    position: absolute;
+    border-color: rgb(236, 125, 35) rgba(226, 218, 218, 0.1) rgba(226, 218, 218, 0.1);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  .container-spinner .one {
+    width: 70px;
+    height: 70px;
+    left:0;  
+    animation: spinner .4s infinite linear
+  }
+  .container-spinner .two {
+    width: 100px;
+    height: 100px;
+    left: -15px;
+    top: -15px;
+    animation: spinner .7s infinite linear
+  }
+  .container-spinner .three {
+    width: 130px;
+    height: 130px;
+    top: -30px;
+    left: -30px;
+    animation: spinner .6s infinite linear
+  }
+  .container-spinner-login{
+    margin-top: -163px;
+    margin-left: 160px;
+  }
+
+  .administrador-usuarios{
+    height: 300px;
+    width: 100%;
+    background: url('../../../assets/img/administrar.jpg');
+   
+    margin-top:50px;
+    border-radius: 5px;
+    display: flex;
+    color: antiquewhite;
+    align-items:center;
+    justify-content: center;
+  }
+ 
+
+
+
+
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg)
+    }
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+
+@media(max-width:600px){
+    .section{
+        flex-direction: column;
+    }
+}

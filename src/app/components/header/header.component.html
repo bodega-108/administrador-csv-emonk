@@ -1,0 +1,27 @@
+<header class="header">
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark emonk-nav">
+            <a class="navbar-brand" href="#">
+              <img src="../../../assets/img/emonk-logo.png" width="120" height="60" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active"  routerLink="/">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Instrucciones</a>
+                <a class="nav-item nav-link" routerLink="/csvproductos">Crear CSV</a>
+                <a class="nav-item nav-link" href="#">Contacto</a>
+                <a class="nav-item nav-link" (click)="cerrarSesion()" href="#" *ngIf="cerrar">Cerrar sesión</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="presentacion">
+        <div class="titulo-presentacion">
+            <h1>Administrador Emonk</h1>
+        </div>
+        
+    </div>
+</header>

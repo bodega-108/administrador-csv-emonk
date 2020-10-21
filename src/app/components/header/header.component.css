@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 500px;
+    background: url('../../../assets/img/banner.jpg');
+    background-size:cover;
+    background-attachment: fixed; 
+}
+
+.menu{
+    background:#000;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items:center;
+    
+}
+
+.logo{
+    flex: 4;
+}
+.nav{
+    flex:1;
+    
+}
+.logo{
+    margin-left: 50px;
+}
+
+.nav-enlace{
+    text-decoration: none;
+    color:#fff;
+    margin-left: 10px;
+    padding:5px;
+    font-size: 16px;
+}
+.presentacion{
+    display:flex;
+    align-items:center;
+    height: 400px;
+    color:#fff;
+    justify-content: center;
+    
+    background:rgba(0,0,0, .4);
+}
+.presentacion h1{
+    font-weight:lighter;
+}
+.emonk-nav{
+    background:#000;
+    height: 100px;
+}

@@ -1,0 +1,125 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" >Sku</label>
+                  <input type="text" class="form-control"name='sku' [(ngModel)]="selectedCsv.sku" id="exampleFormControlInput1" placeholder="Ejemplo: Emonk-7-000023-003">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"  >Tipo de Producto</label>
+                  <select class="form-control" name="tipo"id="exampleFormControlSelect1" [(ngModel)]="selectedCsv.tipo" >
+                    <option>simple</option>
+                    <option>configurable</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Categoria</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Hogar</option>
+                      <option>Electronicos</option>
+                      <option>Agricola</option>
+                      <option>Medica</option>
+                      <option>Fitnes</option>
+                      <option>Piezas Auto</option>
+                      <option>Laboratorio</option>
+                      <option>Materia Prima</option>
+
+                   
+                    </select>
+                  </div>
+        
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"name='nombre' [(ngModel)]="selectedCsv.nombre" placeholder="Ejemplo: Sartén Grill Cuadrado">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descripción</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"name='descripcion' [(ngModel)]="selectedCsv.descripcion"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Descripción Corta</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"name='descripcionCorta' [(ngModel)]="selectedCsv.descripcionCorta" placeholder="Ejemplo: Sartén Grill Cuadrado">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Peso</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" name='peso' [(ngModel)]="selectedCsv.peso" placeholder="Ejemplo: 50">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Color</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name='color' [(ngModel)]="selectedCsv.color">
+                      <option>Rojo</option>
+                      <option>Negro</option>
+                      <option>Azul</option>
+                      <option>Amarillo</option>
+                      <option>Verde</option>
+                      <option>Gris</option>
+                      <option>Cafe</option>
+                      <option>Blanco</option>
+
+                   
+                    </select>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Material</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name='material' [(ngModel)]="selectedCsv.material">
+                      <option>Plastico</option>
+                      <option>Acero</option>
+                      <option>Cobre</option>
+                      <option>Aluminio</option>
+                      <option>Madera</option>
+                      <option>Poliester</option>
+                      <option>Hierro</option>
+                    </select>
+                  </div>
+              </form>
+
+        
+              <button class="btn btn-success" (click)="add()">Agregar</button>
+
+              <div class="container">
+                <input type="file" (change)="onFileChange($event)" multiple="false">
+              </div>
+        </div>
+        <div class="col-md-6 mt-5">
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        
+                        <th scope="col">SKU</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Des.Corta</th>
+                        <th scope="col">Peso</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Material</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of csvArray">
+                        
+                        <th>{{item.sku}}</th>
+                        <td>{{item.tipo}}</td>
+                        <td>{{item.categoria}}</td>
+                        <td>{{item.nombre}}</td>
+                        <td>{{item.descripcion}}</td>
+                        <td>{{item.descripcionCorta}}</td>
+                        <td>{{item.peso}}</td>
+                        <td>{{item.color}}</td>
+                        <td>{{item.material}}</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
